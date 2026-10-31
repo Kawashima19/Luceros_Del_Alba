@@ -1,0 +1,255 @@
+/* =========================================================
+   Luceros del Alba — Estilo común de la wiki
+   Paleta: noche espacial con luz de amanecer (ámbar) y
+   detalles holográficos (cian).
+   ========================================================= */
+
+:root {
+  --fondo: #070b16;
+  --fondo-panel: #0e1526;
+  --borde: #1f2b45;
+  --texto: #d7deea;
+  --texto-suave: #8d9ab3;
+  --ambar: #f2a541;
+  --ambar-claro: #ffd08a;
+  --cian: #5ce1e6;
+  --fuente-titulos: "Chakra Petch", sans-serif;
+  --fuente-texto: "Exo 2", sans-serif;
+  --ancho-max: 1100px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fuente-texto);
+  color: var(--texto);
+  line-height: 1.6;
+  background:
+    radial-gradient(ellipse at 50% 120%, rgba(242, 165, 65, 0.18), transparent 60%),
+    radial-gradient(1px 1px at 20% 30%, #fff8, transparent),
+    radial-gradient(1px 1px at 70% 15%, #fff6, transparent),
+    radial-gradient(1px 1px at 40% 70%, #fff5, transparent),
+    radial-gradient(1px 1px at 85% 55%, #fff7, transparent),
+    radial-gradient(1.5px 1.5px at 10% 85%, #fff6, transparent),
+    radial-gradient(1px 1px at 60% 45%, #fff4, transparent),
+    var(--fondo);
+  background-attachment: fixed;
+}
+
+a { color: var(--cian); text-decoration: none; }
+a:hover { color: var(--ambar-claro); }
+
+/* ---------- Cabecera ---------- */
+.cabecera {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(7, 11, 22, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--borde);
+}
+
+.logo {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--texto);
+}
+.logo__estrella { color: var(--ambar); text-shadow: 0 0 10px var(--ambar); }
+
+.menu { display: flex; gap: 0.25rem; list-style: none; }
+.menu__item { position: relative; }
+
+.menu__boton {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.9rem;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--texto);
+  font-family: var(--fuente-titulos);
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.menu__boton:hover,
+.menu__item.abierto .menu__boton { border-color: var(--borde); color: var(--ambar); }
+.menu__flecha { font-size: 0.7rem; transition: transform 0.2s; }
+.menu__item.abierto .menu__flecha { transform: rotate(180deg); }
+
+.desplegable {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  min-width: 190px;
+  list-style: none;
+  padding: 0.4rem;
+  background: var(--fondo-panel);
+  border: 1px solid var(--borde);
+  border-top: 2px solid var(--ambar);
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+/* Puente invisible para que el ratón no "caiga" en el hueco */
+.desplegable::before {
+  content: "";
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
+  right: 0;
+  height: 0.6rem;
+}
+.desplegable a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 3px;
+  color: var(--texto);
+}
+.desplegable a:hover { background: rgba(92, 225, 230, 0.08); color: var(--cian); }
+
+.menu__item.abierto .desplegable { display: block; }
+
+/* En escritorio también se abren al pasar el ratón */
+@media (hover: hover) and (min-width: 769px) {
+  .menu__item:hover .desplegable { display: block; }
+}
+
+.hamburguesa {
+  display: none;
+  background: none;
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  color: var(--texto);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* ---------- Contenido ---------- */
+.contenido {
+  flex: 1;
+  width: 100%;
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.portada { text-align: center; max-width: 720px; margin: 2rem auto 4rem; }
+.portada__etiqueta {
+  font-family: var(--fuente-titulos);
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--cian);
+}
+.portada__titulo {
+  margin: 0.5rem 0 1.25rem;
+  font-family: var(--fuente-titulos);
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, var(--ambar-claro), var(--ambar));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 18px rgba(242, 165, 65, 0.35));
+}
+.portada__texto { color: var(--texto-suave); font-size: 1.1rem; }
+.portada__botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.boton {
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--cian);
+  border-radius: 4px;
+  font-family: var(--fuente-titulos);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cian);
+}
+.boton:hover { background: rgba(92, 225, 230, 0.1); color: var(--cian); }
+.boton--primario { background: var(--ambar); border-color: var(--ambar); color: var(--fondo); }
+.boton--primario:hover { background: var(--ambar-claro); color: var(--fondo); }
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+.tarjeta {
+  display: block;
+  padding: 1.5rem;
+  background: var(--fondo-panel);
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  color: var(--texto);
+  transition: border-color 0.2s, transform 0.2s;
+}
+.tarjeta:hover { border-color: var(--ambar); transform: translateY(-3px); color: var(--texto); }
+.tarjeta__icono { font-size: 1.5rem; color: var(--ambar); }
+.tarjeta h2 {
+  margin: 0.5rem 0;
+  font-family: var(--fuente-titulos);
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.tarjeta p { color: var(--texto-suave); font-size: 0.95rem; }
+
+/* ---------- Pie ---------- */
+.pie {
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--borde);
+  background: rgba(7, 11, 22, 0.85);
+  text-align: center;
+}
+.pie__enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.pie__enlaces a {
+  font-family: var(--fuente-titulos);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.pie__texto { color: var(--texto-suave); font-size: 0.85rem; }
+
+/* ---------- Móvil ---------- */
+@media (max-width: 768px) {
+  .hamburguesa { display: block; }
+  .cabecera { flex-wrap: wrap; }
+  .cabecera nav { width: 100%; }
+  .menu { display: none; flex-direction: column; padding-top: 0.5rem; }
+  .menu.visible { display: flex; }
+  .menu__boton { width: 100%; justify-content: space-between; }
+  .desplegable {
+    position: static;
+    margin: 0.25rem 0 0.5rem;
+    box-shadow: none;
+  }
+  .contenido { padding: 2rem 1rem; }
+}
