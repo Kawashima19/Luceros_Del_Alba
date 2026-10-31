@@ -514,6 +514,28 @@ a:hover { color: var(--ambar-claro); }
 }
 .objeto__datos dd { text-align: right; font-size: 0.85rem; }
 
+/* Variantes de clase */
+.variantes { margin-top: 1rem; }
+.variantes__titulo {
+  margin-bottom: 0.4rem;
+  font-family: var(--fuente-titulos);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ambar);
+}
+.variantes ul { display: grid; gap: 0.35rem; list-style: none; }
+.variantes li {
+  padding: 0.4rem 0.6rem;
+  background: rgba(242, 165, 65, 0.05);
+  border: 1px solid var(--borde);
+  border-left: 2px solid var(--ambar);
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
+.variantes li strong { display: block; color: var(--texto); font-weight: 600; }
+.variantes li span { color: var(--texto-suave); font-size: 0.8rem; }
+
 /* ---------- Pie ---------- */
 .pie {
   padding: 2rem 1.5rem;
