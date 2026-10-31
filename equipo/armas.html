@@ -12,7 +12,7 @@
 <body>
   <div id="cabecera"></div>
 
-  <main class="contenido">
+  <main class="contenido contenido--ancho">
     <header class="titulo-pagina titulo-pagina--compacto">
       <h1>Equipo</h1>
       <span class="portada__etiqueta">Armería</span>
@@ -24,10 +24,26 @@
       <a href="objetos.html">Objetos</a>
     </nav>
 
-    <p class="intro-equipo">Las armas usan las reglas de D&amp;D 5e del arma equivalente. Solo cambia el nombre y la estética. Los precios están en créditos (1 crédito = 1 pieza de oro).</p>
+    <p class="intro-equipo">Precios en créditos.</p>
 
     <!-- Para añadir un objeto, copia un <article class="objeto"> completo -->
     <section class="rejilla-objetos">
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">†</span>
+          <div>
+            <h2>Cuchillo monofilo</h2>
+            <p class="objeto__tipo">Cuerpo a cuerpo · Sencilla</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Hoja de filo molecular que nunca pierde el corte. Se esconde en una bota y se lanza con la misma facilidad.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d4 perforante</dd></div>
+          <div><dt>Propiedades</dt><dd>Sutil, ligera, arrojadiza (6/18 m)</dd></div>
+          <div><dt>Precio</dt><dd>2 créditos</dd></div>
+          <div><dt>Peso</dt><dd>0,5 kg</dd></div>
+        </dl>
+      </article>
       <article class="objeto">
         <div class="objeto__cabecera">
           <span class="objeto__icono">⟋</span>
@@ -43,7 +59,22 @@
           <div><dt>Precio</dt><dd>10 créditos</dd></div>
           <div><dt>Peso</dt><dd>1 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Espada corta</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">↗</span>
+          <div>
+            <h2>Estoque vibratorio</h2>
+            <p class="objeto__tipo">Cuerpo a cuerpo · Marcial</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Arma de duelo de la aristocracia orbital. Fina, rápida y con una punta que zumba al buscar los huecos de la armadura.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d8 perforante</dd></div>
+          <div><dt>Propiedades</dt><dd>Sutil</dd></div>
+          <div><dt>Precio</dt><dd>25 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1 kg</dd></div>
+        </dl>
       </article>
       <article class="objeto">
         <div class="objeto__cabecera">
@@ -60,7 +91,54 @@
           <div><dt>Precio</dt><dd>15 créditos</dd></div>
           <div><dt>Peso</dt><dd>1,5 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Espada larga</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⚚</span>
+          <div>
+            <h2>Espadón térmico</h2>
+            <p class="objeto__tipo">Cuerpo a cuerpo · Marcial</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Una hoja enorme que se pone al rojo vivo al activarse. Lenta de manejar, pero cauteriza lo que corta.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>2d6 cortante</dd></div>
+          <div><dt>Propiedades</dt><dd>Pesada, a dos manos</dd></div>
+          <div><dt>Precio</dt><dd>50 créditos</dd></div>
+          <div><dt>Peso</dt><dd>3 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⚒</span>
+          <div>
+            <h2>Mazo gravitatorio</h2>
+            <p class="objeto__tipo">Cuerpo a cuerpo · Marcial</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Martillo de minero con un núcleo que multiplica su masa en el momento del impacto. Abre mamparos y cráneos por igual.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>2d6 contundente</dd></div>
+          <div><dt>Propiedades</dt><dd>Pesada, a dos manos</dd></div>
+          <div><dt>Precio</dt><dd>10 créditos</dd></div>
+          <div><dt>Peso</dt><dd>5 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">∿</span>
+          <div>
+            <h2>Látigo eléctrico</h2>
+            <p class="objeto__tipo">Cuerpo a cuerpo · Marcial</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Cable flexible cargado de electricidad. Llega más lejos que cualquier hoja y su chasquido se oye en toda la sala.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d4 cortante</dd></div>
+          <div><dt>Propiedades</dt><dd>Sutil, alcance</dd></div>
+          <div><dt>Precio</dt><dd>2 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1,5 kg</dd></div>
+        </dl>
       </article>
       <article class="objeto">
         <div class="objeto__cabecera">
@@ -77,7 +155,54 @@
           <div><dt>Precio</dt><dd>75 créditos</dd></div>
           <div><dt>Peso</dt><dd>1,5 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Ballesta de mano</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">╤</span>
+          <div>
+            <h2>Carabina bláster</h2>
+            <p class="objeto__tipo">A distancia · Sencilla</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Ligera y fiable, es el arma estándar de colonos y milicias. Fácil de usar incluso sin entrenamiento militar.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d6 perforante</dd></div>
+          <div><dt>Propiedades</dt><dd>Munición (24/96 m), a dos manos</dd></div>
+          <div><dt>Precio</dt><dd>25 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">╦</span>
+          <div>
+            <h2>Rifle bláster</h2>
+            <p class="objeto__tipo">A distancia · Sencilla</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Más potente que la carabina, a cambio de un tiempo de enfriamiento entre disparos.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d8 perforante</dd></div>
+          <div><dt>Propiedades</dt><dd>Munición (24/96 m), recarga, a dos manos</dd></div>
+          <div><dt>Precio</dt><dd>25 créditos</dd></div>
+          <div><dt>Peso</dt><dd>2,5 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⊹</span>
+          <div>
+            <h2>Rifle de precisión</h2>
+            <p class="objeto__tipo">A distancia · Marcial</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Rifle de cañón largo con mira de largo alcance. El favorito de los francotiradores que trabajan desde lejos.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d8 perforante</dd></div>
+          <div><dt>Propiedades</dt><dd>Munición (45/180 m), pesada, a dos manos</dd></div>
+          <div><dt>Precio</dt><dd>50 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1 kg</dd></div>
+        </dl>
       </article>
       <article class="objeto">
         <div class="objeto__cabecera">
@@ -94,7 +219,6 @@
           <div><dt>Precio</dt><dd>50 créditos</dd></div>
           <div><dt>Peso</dt><dd>9 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Ballesta pesada</strong></p>
       </article>
     </section>
   </main>

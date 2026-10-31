@@ -12,7 +12,7 @@
 <body>
   <div id="cabecera"></div>
 
-  <main class="contenido">
+  <main class="contenido contenido--ancho">
     <header class="titulo-pagina titulo-pagina--compacto">
       <h1>Equipo</h1>
       <span class="portada__etiqueta">Suministros</span>
@@ -24,7 +24,7 @@
       <a href="objetos.html" class="activa" aria-current="page">Objetos</a>
     </nav>
 
-    <p class="intro-equipo">Los objetos usan las reglas de D&amp;D 5e del objeto equivalente. Los precios están en créditos (1 crédito = 1 pieza de oro).</p>
+    <p class="intro-equipo">Precios en créditos.</p>
 
     <!-- Para añadir un objeto, copia un <article class="objeto"> completo -->
     <section class="rejilla-objetos">
@@ -36,14 +36,13 @@
             <p class="objeto__tipo">Consumible</p>
           </div>
         </div>
-        <p class="objeto__desc">Autoinyector con nanobots de reparación celular. Se clava en el brazo y en segundos cierra cortes y quemaduras.</p>
+        <p class="objeto__desc">Autoinyector con nanobots de reparación celular. En segundos cierra cortes y quemaduras.</p>
         <dl class="objeto__datos">
-          <div><dt>Efecto</dt><dd>Recupera 2d4 + 2 puntos de golpe</dd></div>
+          <div><dt>Efecto</dt><dd>Recupera 2d4 + 2 PG</dd></div>
           <div><dt>Uso</dt><dd>Una acción</dd></div>
           <div><dt>Precio</dt><dd>50 créditos</dd></div>
           <div><dt>Peso</dt><dd>0,25 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Poción de curación</strong></p>
       </article>
       <article class="objeto">
         <div class="objeto__cabecera">
@@ -55,12 +54,42 @@
         </div>
         <p class="objeto__desc">Maletín con vendas de gel, sellador de heridas y escáner básico. Imprescindible en cualquier tripulación.</p>
         <dl class="objeto__datos">
-          <div><dt>Efecto</dt><dd>Estabiliza a una criatura a 0 PG sin tirada de Sabiduría (Medicina)</dd></div>
+          <div><dt>Efecto</dt><dd>Estabiliza a una criatura a 0 PG sin tirada</dd></div>
           <div><dt>Usos</dt><dd>10</dd></div>
           <div><dt>Precio</dt><dd>5 créditos</dd></div>
           <div><dt>Peso</dt><dd>1,5 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Útiles de sanador</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⚕</span>
+          <div>
+            <h2>Purgador de toxinas</h2>
+            <p class="objeto__tipo">Consumible</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Ampolla de filtros sintéticos que limpian la sangre. Útil en planetas con atmósfera tóxica o comida dudosa.</p>
+        <dl class="objeto__datos">
+          <div><dt>Efecto</dt><dd>Ventaja en salvaciones contra veneno durante 1 hora</dd></div>
+          <div><dt>Uso</dt><dd>Una acción</dd></div>
+          <div><dt>Precio</dt><dd>50 créditos</dd></div>
+          <div><dt>Peso</dt><dd>—</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">▭</span>
+          <div>
+            <h2>Raciones de viaje</h2>
+            <p class="objeto__tipo">Consumible</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Barritas comprimidas de proteína y nutrientes. Saben a cartón, pero mantienen con vida.</p>
+        <dl class="objeto__datos">
+          <div><dt>Efecto</dt><dd>Comida para 1 día</dd></div>
+          <div><dt>Precio</dt><dd>0,5 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1 kg</dd></div>
+        </dl>
       </article>
       <article class="objeto">
         <div class="objeto__cabecera">
@@ -70,13 +99,107 @@
             <p class="objeto__tipo">Herramientas</p>
           </div>
         </div>
-        <p class="objeto__desc">Ganzúas magnéticas, puenteadores y una tableta para forzar cerraduras electrónicas, puertas de seguridad y terminales.</p>
+        <p class="objeto__desc">Ganzúas magnéticas, puenteadores y una tableta para forzar cerraduras electrónicas y terminales.</p>
         <dl class="objeto__datos">
-          <div><dt>Efecto</dt><dd>Permite abrir cerraduras y desactivar trampas; con competencia, sumas tu bonificador</dd></div>
+          <div><dt>Efecto</dt><dd>Abrir cerraduras y desactivar trampas</dd></div>
+          <div><dt>Competencia</dt><dd>Suma tu bonificador</dd></div>
           <div><dt>Precio</dt><dd>25 créditos</dd></div>
           <div><dt>Peso</dt><dd>0,5 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Herramientas de ladrón</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">◎</span>
+          <div>
+            <h2>Macrobinoculares</h2>
+            <p class="objeto__tipo">Equipo</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Prismáticos digitales con zoom y visión nocturna básica. Caros, pero salvan vidas en un reconocimiento.</p>
+        <dl class="objeto__datos">
+          <div><dt>Efecto</dt><dd>Los objetos se ven al doble de tamaño</dd></div>
+          <div><dt>Precio</dt><dd>1.000 créditos</dd></div>
+          <div><dt>Peso</dt><dd>0,5 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">∞</span>
+          <div>
+            <h2>Cable de nanofibra</h2>
+            <p class="objeto__tipo">Equipo</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Cuerda fina como un hilo y fuerte como el acero. Se enrolla en un carrete que cabe en el cinturón.</p>
+        <dl class="objeto__datos">
+          <div><dt>Longitud</dt><dd>15 m</dd></div>
+          <div><dt>Resistencia</dt><dd>2 PG; CD 17 de Fuerza para romperlo</dd></div>
+          <div><dt>Precio</dt><dd>10 créditos</dd></div>
+          <div><dt>Peso</dt><dd>2,5 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">◐</span>
+          <div>
+            <h2>Linterna de haz</h2>
+            <p class="objeto__tipo">Equipo</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Foco de mano de alta potencia con obturador para cerrar el haz al instante.</p>
+        <dl class="objeto__datos">
+          <div><dt>Luz</dt><dd>Cono de 18 m brillante y 18 m más tenue</dd></div>
+          <div><dt>Duración</dt><dd>6 horas por célula</dd></div>
+          <div><dt>Precio</dt><dd>10 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">✲</span>
+          <div>
+            <h2>Abrojos magnéticos</h2>
+            <p class="objeto__tipo">Equipo</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Bolsa de púas que se adhieren al suelo metálico. Perfectos para cubrir una huida por un pasillo.</p>
+        <dl class="objeto__datos">
+          <div><dt>Área</dt><dd>Cubren 1,5 × 1,5 m</dd></div>
+          <div><dt>Efecto</dt><dd>CD 15 de Des o 1 de daño perforante y se detiene; −3 m de velocidad</dd></div>
+          <div><dt>Precio</dt><dd>1 crédito</dd></div>
+          <div><dt>Peso</dt><dd>1 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⊗</span>
+          <div>
+            <h2>Esposas magnéticas</h2>
+            <p class="objeto__tipo">Equipo</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Grilletes que se cierran con un campo magnético. Estándar en cazarrecompensas y fuerzas de seguridad.</p>
+        <dl class="objeto__datos">
+          <div><dt>Escapar</dt><dd>CD 20 de Destreza</dd></div>
+          <div><dt>Romper</dt><dd>CD 20 de Fuerza</dd></div>
+          <div><dt>Precio</dt><dd>2 créditos</dd></div>
+          <div><dt>Peso</dt><dd>3 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⚗</span>
+          <div>
+            <h2>Vial corrosivo</h2>
+            <p class="objeto__tipo">Consumible · Arrojadizo</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Ampolla de ácido industrial. Se lanza contra un enemigo o se vierte sobre una cerradura que no quiere abrirse.</p>
+        <dl class="objeto__datos">
+          <div><dt>Efecto</dt><dd>Ataque a distancia (6 m): 2d6 de daño de ácido</dd></div>
+          <div><dt>Precio</dt><dd>25 créditos</dd></div>
+          <div><dt>Peso</dt><dd>0,5 kg</dd></div>
+        </dl>
       </article>
       <article class="objeto">
         <div class="objeto__cabecera">
@@ -93,7 +216,6 @@
           <div><dt>Precio</dt><dd>50 créditos</dd></div>
           <div><dt>Peso</dt><dd>0,5 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Fuego de alquimista</strong></p>
       </article>
     </section>
   </main>

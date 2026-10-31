@@ -448,16 +448,17 @@ a:hover { color: var(--ambar-claro); }
 
 .rejilla-objetos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
-  max-width: 900px;
-  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
+.contenido--ancho { max-width: 1320px; }
+@media (max-width: 1150px) { .rejilla-objetos { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px)  { .rejilla-objetos { grid-template-columns: repeat(2, 1fr); } }
 
 .objeto {
   display: flex;
   flex-direction: column;
-  padding: 1.25rem 1.4rem;
+  padding: 1.1rem 1.15rem;
   background: linear-gradient(160deg, rgba(14, 21, 38, 0.95), rgba(7, 11, 22, 0.9));
   border: 1px solid var(--borde);
   border-top: 2px solid var(--ambar);
@@ -471,8 +472,8 @@ a:hover { color: var(--ambar-claro); }
   display: grid;
   place-items: center;
   flex-shrink: 0;
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
   border: 1px solid var(--borde);
   border-radius: 4px;
   font-size: 1.4rem;
@@ -481,7 +482,7 @@ a:hover { color: var(--ambar-claro); }
 }
 .objeto h2 {
   font-family: var(--fuente-titulos);
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--ambar);
@@ -493,9 +494,9 @@ a:hover { color: var(--ambar-claro); }
   text-transform: uppercase;
   color: var(--texto-suave);
 }
-.objeto__desc { color: var(--texto-suave); font-size: 0.95rem; margin-bottom: 1rem; }
+.objeto__desc { color: var(--texto-suave); font-size: 0.88rem; margin-bottom: 0.9rem; }
 
-.objeto__datos { display: grid; gap: 0.35rem; margin-bottom: 1rem; }
+.objeto__datos { display: grid; gap: 0.2rem; margin-top: auto; }
 .objeto__datos div {
   display: flex;
   justify-content: space-between;
@@ -511,14 +512,7 @@ a:hover { color: var(--ambar-claro); }
   text-transform: uppercase;
   color: var(--cian);
 }
-.objeto__datos dd { text-align: right; font-size: 0.95rem; }
-
-.objeto__equivale {
-  margin-top: auto;
-  font-size: 0.8rem;
-  color: var(--texto-suave);
-}
-.objeto__equivale strong { color: var(--texto); font-weight: 600; }
+.objeto__datos dd { text-align: right; font-size: 0.85rem; }
 
 /* ---------- Pie ---------- */
 .pie {

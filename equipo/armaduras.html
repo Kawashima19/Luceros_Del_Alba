@@ -12,7 +12,7 @@
 <body>
   <div id="cabecera"></div>
 
-  <main class="contenido">
+  <main class="contenido contenido--ancho">
     <header class="titulo-pagina titulo-pagina--compacto">
       <h1>Equipo</h1>
       <span class="portada__etiqueta">Blindajes</span>
@@ -24,7 +24,7 @@
       <a href="objetos.html">Objetos</a>
     </nav>
 
-    <p class="intro-equipo">Las armaduras usan las reglas de D&amp;D 5e de la armadura equivalente: misma CA, requisitos y penalizaciones. Los precios están en créditos (1 crédito = 1 pieza de oro).</p>
+    <p class="intro-equipo">Precios en créditos.</p>
 
     <!-- Para añadir un objeto, copia un <article class="objeto"> completo -->
     <section class="rejilla-objetos">
@@ -36,15 +36,48 @@
             <p class="objeto__tipo">Ligera</p>
           </div>
         </div>
-        <p class="objeto__desc">Ropa reforzada con láminas de polímero. Es la elección de exploradores y pilotos que necesitan moverse con libertad.</p>
+        <p class="objeto__desc">Ropa reforzada con láminas de polímero. Es la elección de exploradores que necesitan moverse con libertad.</p>
         <dl class="objeto__datos">
-          <div><dt>CA</dt><dd>11 + mod. de Destreza</dd></div>
+          <div><dt>CA</dt><dd>11 + mod. Des</dd></div>
           <div><dt>Fuerza</dt><dd>—</dd></div>
           <div><dt>Sigilo</dt><dd>—</dd></div>
           <div><dt>Precio</dt><dd>10 créditos</dd></div>
           <div><dt>Peso</dt><dd>5 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Armadura de cuero</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">▥</span>
+          <div>
+            <h2>Traje de piloto blindado</h2>
+            <p class="objeto__tipo">Ligera</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Mono de vuelo con placas de impacto cosidas en pecho y hombros. Diseñado para sobrevivir a un aterrizaje forzoso.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>12 + mod. Des</dd></div>
+          <div><dt>Fuerza</dt><dd>—</dd></div>
+          <div><dt>Sigilo</dt><dd>—</dd></div>
+          <div><dt>Precio</dt><dd>45 créditos</dd></div>
+          <div><dt>Peso</dt><dd>6,5 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">◈</span>
+          <div>
+            <h2>Caparazón alienígena</h2>
+            <p class="objeto__tipo">Media</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Placas arrancadas a una criatura de un mundo hostil y unidas con correas. Tosca, barata y sorprendentemente dura.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>12 + mod. Des (máx. 2)</dd></div>
+          <div><dt>Fuerza</dt><dd>—</dd></div>
+          <div><dt>Sigilo</dt><dd>—</dd></div>
+          <div><dt>Precio</dt><dd>10 créditos</dd></div>
+          <div><dt>Peso</dt><dd>6 kg</dd></div>
+        </dl>
       </article>
       <article class="objeto">
         <div class="objeto__cabecera">
@@ -54,15 +87,116 @@
             <p class="objeto__tipo">Media</p>
           </div>
         </div>
-        <p class="objeto__desc">Malla de microanillos de aleación que se lleva bajo la ropa. Detiene metralla y disparos de rebote sin llamar la atención.</p>
+        <p class="objeto__desc">Malla de microanillos de aleación que se lleva bajo la ropa. Detiene metralla sin llamar la atención.</p>
         <dl class="objeto__datos">
-          <div><dt>CA</dt><dd>13 + mod. de Destreza (máx. 2)</dd></div>
+          <div><dt>CA</dt><dd>13 + mod. Des (máx. 2)</dd></div>
           <div><dt>Fuerza</dt><dd>—</dd></div>
           <div><dt>Sigilo</dt><dd>—</dd></div>
           <div><dt>Precio</dt><dd>50 créditos</dd></div>
           <div><dt>Peso</dt><dd>10 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Camisa de malla</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">▧</span>
+          <div>
+            <h2>Cota de escamas cerámicas</h2>
+            <p class="objeto__tipo">Media</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Cientos de escamas de cerámica que dispersan el calor de los disparos. Tintinean a cada paso.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>14 + mod. Des (máx. 2)</dd></div>
+          <div><dt>Fuerza</dt><dd>—</dd></div>
+          <div><dt>Sigilo</dt><dd>Desventaja</dd></div>
+          <div><dt>Precio</dt><dd>50 créditos</dd></div>
+          <div><dt>Peso</dt><dd>22,5 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⛉</span>
+          <div>
+            <h2>Coraza de duracero</h2>
+            <p class="objeto__tipo">Media</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Peto moldeado de una sola pieza. Protege lo esencial y deja libres brazos y piernas.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>14 + mod. Des (máx. 2)</dd></div>
+          <div><dt>Fuerza</dt><dd>—</dd></div>
+          <div><dt>Sigilo</dt><dd>—</dd></div>
+          <div><dt>Precio</dt><dd>400 créditos</dd></div>
+          <div><dt>Peso</dt><dd>10 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">▨</span>
+          <div>
+            <h2>Semiarmadura de combate</h2>
+            <p class="objeto__tipo">Media</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Placas de combate sobre torso y muslos, con juntas flexibles. El equilibrio entre protección y movilidad.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>15 + mod. Des (máx. 2)</dd></div>
+          <div><dt>Fuerza</dt><dd>—</dd></div>
+          <div><dt>Sigilo</dt><dd>Desventaja</dd></div>
+          <div><dt>Precio</dt><dd>750 créditos</dd></div>
+          <div><dt>Peso</dt><dd>20 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">▩</span>
+          <div>
+            <h2>Mono de anillas reforzado</h2>
+            <p class="objeto__tipo">Pesada</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Traje de trabajo industrial con anillas metálicas remachadas. Lo usan estibadores y guardias de bajo presupuesto.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>14</dd></div>
+          <div><dt>Fuerza</dt><dd>—</dd></div>
+          <div><dt>Sigilo</dt><dd>Desventaja</dd></div>
+          <div><dt>Precio</dt><dd>30 créditos</dd></div>
+          <div><dt>Peso</dt><dd>20 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⊞</span>
+          <div>
+            <h2>Armadura de patrulla</h2>
+            <p class="objeto__tipo">Pesada</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Equipo reglamentario de las patrullas de frontera. Pesada, pero aguanta casi cualquier cosa.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>16</dd></div>
+          <div><dt>Fuerza</dt><dd>13</dd></div>
+          <div><dt>Sigilo</dt><dd>Desventaja</dd></div>
+          <div><dt>Precio</dt><dd>75 créditos</dd></div>
+          <div><dt>Peso</dt><dd>27,5 kg</dd></div>
+        </dl>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">☰</span>
+          <div>
+            <h2>Armadura de láminas</h2>
+            <p class="objeto__tipo">Pesada</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Láminas verticales de aleación unidas sobre un traje acolchado. Protección casi total a cambio de mucho peso.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>17</dd></div>
+          <div><dt>Fuerza</dt><dd>15</dd></div>
+          <div><dt>Sigilo</dt><dd>Desventaja</dd></div>
+          <div><dt>Precio</dt><dd>200 créditos</dd></div>
+          <div><dt>Peso</dt><dd>30 kg</dd></div>
+        </dl>
       </article>
       <article class="objeto">
         <div class="objeto__cabecera">
@@ -72,7 +206,7 @@
             <p class="objeto__tipo">Pesada</p>
           </div>
         </div>
-        <p class="objeto__desc">Placas de duracero con sellado ambiental, usadas por tropas de choque. Sin la fuerza necesaria, quien la lleva pierde 3 m de velocidad.</p>
+        <p class="objeto__desc">Placas de duracero con sellado ambiental, usadas por tropas de choque. Lo mejor que se puede comprar con créditos.</p>
         <dl class="objeto__datos">
           <div><dt>CA</dt><dd>18</dd></div>
           <div><dt>Fuerza</dt><dd>15</dd></div>
@@ -80,7 +214,6 @@
           <div><dt>Precio</dt><dd>1.500 créditos</dd></div>
           <div><dt>Peso</dt><dd>32,5 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Armadura de placas</strong></p>
       </article>
       <article class="objeto">
         <div class="objeto__cabecera">
@@ -98,7 +231,6 @@
           <div><dt>Precio</dt><dd>10 créditos</dd></div>
           <div><dt>Peso</dt><dd>3 kg</dd></div>
         </dl>
-        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Escudo</strong></p>
       </article>
     </section>
   </main>
