@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Objetos · Luceros del Alba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <div id="cabecera"></div>
+
+  <main class="contenido">
+    <header class="titulo-pagina titulo-pagina--compacto">
+      <h1>Equipo</h1>
+      <span class="portada__etiqueta">Suministros</span>
+    </header>
+
+    <nav class="pestanas">
+      <a href="armas.html">Armas</a>
+      <a href="armaduras.html">Armaduras</a>
+      <a href="objetos.html" class="activa" aria-current="page">Objetos</a>
+    </nav>
+
+    <p class="intro-equipo">Los objetos usan las reglas de D&amp;D 5e del objeto equivalente. Los precios están en créditos (1 crédito = 1 pieza de oro).</p>
+
+    <!-- Para añadir un objeto, copia un <article class="objeto"> completo -->
+    <section class="rejilla-objetos">
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">✚</span>
+          <div>
+            <h2>Estimulante médico</h2>
+            <p class="objeto__tipo">Consumible</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Autoinyector con nanobots de reparación celular. Se clava en el brazo y en segundos cierra cortes y quemaduras.</p>
+        <dl class="objeto__datos">
+          <div><dt>Efecto</dt><dd>Recupera 2d4 + 2 puntos de golpe</dd></div>
+          <div><dt>Uso</dt><dd>Una acción</dd></div>
+          <div><dt>Precio</dt><dd>50 créditos</dd></div>
+          <div><dt>Peso</dt><dd>0,25 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Poción de curación</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⊕</span>
+          <div>
+            <h2>Kit médico de campo</h2>
+            <p class="objeto__tipo">Equipo</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Maletín con vendas de gel, sellador de heridas y escáner básico. Imprescindible en cualquier tripulación.</p>
+        <dl class="objeto__datos">
+          <div><dt>Efecto</dt><dd>Estabiliza a una criatura a 0 PG sin tirada de Sabiduría (Medicina)</dd></div>
+          <div><dt>Usos</dt><dd>10</dd></div>
+          <div><dt>Precio</dt><dd>5 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1,5 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Útiles de sanador</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⌗</span>
+          <div>
+            <h2>Descodificador</h2>
+            <p class="objeto__tipo">Herramientas</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Ganzúas magnéticas, puenteadores y una tableta para forzar cerraduras electrónicas, puertas de seguridad y terminales.</p>
+        <dl class="objeto__datos">
+          <div><dt>Efecto</dt><dd>Permite abrir cerraduras y desactivar trampas; con competencia, sumas tu bonificador</dd></div>
+          <div><dt>Precio</dt><dd>25 créditos</dd></div>
+          <div><dt>Peso</dt><dd>0,5 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Herramientas de ladrón</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">◉</span>
+          <div>
+            <h2>Granada incendiaria</h2>
+            <p class="objeto__tipo">Consumible · Arrojadiza</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Esfera de gel de plasma que se adhiere al impactar y sigue ardiendo hasta que alguien consiga apagarla.</p>
+        <dl class="objeto__datos">
+          <div><dt>Efecto</dt><dd>Ataque a distancia (6/18 m): 1d4 de fuego al inicio de cada turno del objetivo</dd></div>
+          <div><dt>Apagar</dt><dd>Acción y CD 10 de Destreza</dd></div>
+          <div><dt>Precio</dt><dd>50 créditos</dd></div>
+          <div><dt>Peso</dt><dd>0,5 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Fuego de alquimista</strong></p>
+      </article>
+    </section>
+  </main>
+
+  <div id="pie"></div>
+
+  <script src="../js/menu.js"></script>
+</body>
+</html>

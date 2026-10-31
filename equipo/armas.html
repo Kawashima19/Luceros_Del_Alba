@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armas · Luceros del Alba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <div id="cabecera"></div>
+
+  <main class="contenido">
+    <header class="titulo-pagina titulo-pagina--compacto">
+      <h1>Equipo</h1>
+      <span class="portada__etiqueta">Armería</span>
+    </header>
+
+    <nav class="pestanas">
+      <a href="armas.html" class="activa" aria-current="page">Armas</a>
+      <a href="armaduras.html">Armaduras</a>
+      <a href="objetos.html">Objetos</a>
+    </nav>
+
+    <p class="intro-equipo">Las armas usan las reglas de D&amp;D 5e del arma equivalente. Solo cambia el nombre y la estética. Los precios están en créditos (1 crédito = 1 pieza de oro).</p>
+
+    <!-- Para añadir un objeto, copia un <article class="objeto"> completo -->
+    <section class="rejilla-objetos">
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⟋</span>
+          <div>
+            <h2>Vibrocuchillo</h2>
+            <p class="objeto__tipo">Cuerpo a cuerpo · Marcial</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Hoja corta con un emisor sónico en la empuñadura que la hace vibrar a alta frecuencia. Corta blindaje ligero como si fuera tela.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d6 perforante</dd></div>
+          <div><dt>Propiedades</dt><dd>Sutil, ligera</dd></div>
+          <div><dt>Precio</dt><dd>10 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Espada corta</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⚔</span>
+          <div>
+            <h2>Hoja de plasma</h2>
+            <p class="objeto__tipo">Cuerpo a cuerpo · Marcial</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Espada con el filo recubierto de un arco de plasma contenido. Se puede empuñar con una mano o con dos para golpear más fuerte.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d8 cortante</dd></div>
+          <div><dt>Propiedades</dt><dd>Versátil (1d10)</dd></div>
+          <div><dt>Precio</dt><dd>15 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1,5 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Espada larga</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⌐</span>
+          <div>
+            <h2>Pistola bláster</h2>
+            <p class="objeto__tipo">A distancia · Marcial</p>
+          </div>
+        </div>
+        <p class="objeto__desc">El arma de cualquier contrabandista que se precie. Cabe en una funda de cadera; tras cada disparo necesita un instante para recargar la célula.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d6 perforante</dd></div>
+          <div><dt>Propiedades</dt><dd>Munición (9/36 m), ligera, recarga</dd></div>
+          <div><dt>Precio</dt><dd>75 créditos</dd></div>
+          <div><dt>Peso</dt><dd>1,5 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Ballesta de mano</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">═</span>
+          <div>
+            <h2>Rifle de riel pesado</h2>
+            <p class="objeto__tipo">A distancia · Marcial</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Acelera proyectiles metálicos con bobinas magnéticas. Lento de recargar y difícil de cargar, pero atraviesa coberturas ligeras a gran distancia.</p>
+        <dl class="objeto__datos">
+          <div><dt>Daño</dt><dd>1d10 perforante</dd></div>
+          <div><dt>Propiedades</dt><dd>Munición (30/120 m), pesada, recarga, a dos manos</dd></div>
+          <div><dt>Precio</dt><dd>50 créditos</dd></div>
+          <div><dt>Peso</dt><dd>9 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Ballesta pesada</strong></p>
+      </article>
+    </section>
+  </main>
+
+  <div id="pie"></div>
+
+  <script src="../js/menu.js"></script>
+</body>
+</html>

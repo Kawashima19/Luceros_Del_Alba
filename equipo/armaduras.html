@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armaduras · Luceros del Alba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <div id="cabecera"></div>
+
+  <main class="contenido">
+    <header class="titulo-pagina titulo-pagina--compacto">
+      <h1>Equipo</h1>
+      <span class="portada__etiqueta">Blindajes</span>
+    </header>
+
+    <nav class="pestanas">
+      <a href="armas.html">Armas</a>
+      <a href="armaduras.html" class="activa" aria-current="page">Armaduras</a>
+      <a href="objetos.html">Objetos</a>
+    </nav>
+
+    <p class="intro-equipo">Las armaduras usan las reglas de D&amp;D 5e de la armadura equivalente: misma CA, requisitos y penalizaciones. Los precios están en créditos (1 crédito = 1 pieza de oro).</p>
+
+    <!-- Para añadir un objeto, copia un <article class="objeto"> completo -->
+    <section class="rejilla-objetos">
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">▤</span>
+          <div>
+            <h2>Chaqueta de fibra táctica</h2>
+            <p class="objeto__tipo">Ligera</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Ropa reforzada con láminas de polímero. Es la elección de exploradores y pilotos que necesitan moverse con libertad.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>11 + mod. de Destreza</dd></div>
+          <div><dt>Fuerza</dt><dd>—</dd></div>
+          <div><dt>Sigilo</dt><dd>—</dd></div>
+          <div><dt>Precio</dt><dd>10 créditos</dd></div>
+          <div><dt>Peso</dt><dd>5 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Armadura de cuero</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">▦</span>
+          <div>
+            <h2>Chaleco de malla balística</h2>
+            <p class="objeto__tipo">Media</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Malla de microanillos de aleación que se lleva bajo la ropa. Detiene metralla y disparos de rebote sin llamar la atención.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>13 + mod. de Destreza (máx. 2)</dd></div>
+          <div><dt>Fuerza</dt><dd>—</dd></div>
+          <div><dt>Sigilo</dt><dd>—</dd></div>
+          <div><dt>Precio</dt><dd>50 créditos</dd></div>
+          <div><dt>Peso</dt><dd>10 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Camisa de malla</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">▣</span>
+          <div>
+            <h2>Armadura de asalto pesada</h2>
+            <p class="objeto__tipo">Pesada</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Placas de duracero con sellado ambiental, usadas por tropas de choque. Sin la fuerza necesaria, quien la lleva pierde 3 m de velocidad.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>18</dd></div>
+          <div><dt>Fuerza</dt><dd>15</dd></div>
+          <div><dt>Sigilo</dt><dd>Desventaja</dd></div>
+          <div><dt>Precio</dt><dd>1.500 créditos</dd></div>
+          <div><dt>Peso</dt><dd>32,5 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Armadura de placas</strong></p>
+      </article>
+      <article class="objeto">
+        <div class="objeto__cabecera">
+          <span class="objeto__icono">⬡</span>
+          <div>
+            <h2>Escudo de energía</h2>
+            <p class="objeto__tipo">Escudo</p>
+          </div>
+        </div>
+        <p class="objeto__desc">Brazalete que proyecta una barrera hexagonal de energía. Ocupa una mano, igual que un escudo normal.</p>
+        <dl class="objeto__datos">
+          <div><dt>CA</dt><dd>+2</dd></div>
+          <div><dt>Fuerza</dt><dd>—</dd></div>
+          <div><dt>Sigilo</dt><dd>—</dd></div>
+          <div><dt>Precio</dt><dd>10 créditos</dd></div>
+          <div><dt>Peso</dt><dd>3 kg</dd></div>
+        </dl>
+        <p class="objeto__equivale">Equivale en D&amp;D 5e a: <strong>Escudo</strong></p>
+      </article>
+    </section>
+  </main>
+
+  <div id="pie"></div>
+
+  <script src="../js/menu.js"></script>
+</body>
+</html>
