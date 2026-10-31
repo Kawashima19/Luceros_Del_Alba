@@ -249,6 +249,48 @@ a:hover { color: var(--ambar-claro); }
   50% { transform: translateY(-10px); }
 }
 
+/* ---------- Carrusel ---------- */
+.carrusel { position: relative; padding: 0 4.5rem; }
+.carrusel .planeta { display: none; margin-bottom: 2rem; }
+.carrusel .planeta.activo { display: grid; animation: entrar-der 0.45s ease; }
+.carrusel .planeta.activo.desde-izq { animation-name: entrar-izq; }
+@keyframes entrar-der { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: none; } }
+@keyframes entrar-izq { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: none; } }
+
+.flecha {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 3.2rem;
+  height: 3.2rem;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  background: rgba(14, 21, 38, 0.85);
+  border: 1px solid var(--borde);
+  border-radius: 50%;
+  color: var(--ambar);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
+}
+.flecha:hover { border-color: var(--ambar); color: var(--ambar-claro); box-shadow: 0 0 18px rgba(242, 165, 65, 0.35); }
+.flecha--izq { left: 0; }
+.flecha--der { right: 0; }
+
+.carrusel__puntos { display: flex; justify-content: center; gap: 0.6rem; }
+.carrusel__punto {
+  width: 0.7rem;
+  height: 0.7rem;
+  padding: 0;
+  border: 1px solid var(--texto-suave);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+.carrusel__punto.activo { background: var(--ambar); border-color: var(--ambar); box-shadow: 0 0 8px var(--ambar); }
+
 /* Interfaz de datos tipo terminal holográfica */
 .ficha {
   --color: var(--ambar);
@@ -395,4 +437,7 @@ a:hover { color: var(--ambar-claro); }
   .planeta__imagen img { max-width: 240px; }
   .ficha { padding: 1.25rem; }
   .ficha__datos { gap: 0.6rem; }
+  .carrusel { padding: 0; }
+  /* En móvil las flechas quedan a los lados de la imagen del planeta */
+  .flecha { top: 120px; width: 2.6rem; height: 2.6rem; font-size: 1.6rem; }
 }

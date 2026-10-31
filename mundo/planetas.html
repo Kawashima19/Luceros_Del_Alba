@@ -19,6 +19,12 @@
       <p>Los mundos conocidos de la campaña.</p>
     </header>
 
+    <!-- Carrusel: cada <article class="planeta"> es una diapositiva.
+         Para añadir un planeta, copia un <article> completo dentro de .carrusel__pista -->
+    <section class="carrusel" aria-label="Planetas">
+      <button class="flecha flecha--izq" aria-label="Planeta anterior">‹</button>
+      <div class="carrusel__pista">
+
     <!-- ============ PLANETA 1 ============ -->
     <!-- Para cambiar la imagen: sustituye img/planeta-1.svg o cambia el src -->
     <article class="planeta" id="planeta-1">
@@ -91,10 +97,16 @@
         </div>
       </div>
     </article>
+
+      </div>
+      <button class="flecha flecha--der" aria-label="Planeta siguiente">›</button>
+      <div class="carrusel__puntos"></div>
+    </section>
   </main>
 
   <div id="pie"></div>
 
   <script src="../js/menu.js"></script>
+  <script src="../js/carrusel.js"></script>
 </body>
 </html>
