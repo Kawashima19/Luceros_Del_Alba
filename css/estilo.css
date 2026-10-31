@@ -216,6 +216,145 @@ a:hover { color: var(--ambar-claro); }
 }
 .tarjeta p { color: var(--texto-suave); font-size: 0.95rem; }
 
+/* ---------- Título de página interior ---------- */
+.titulo-pagina { text-align: center; margin-bottom: 3rem; }
+.titulo-pagina h1 {
+  margin: 0.3rem 0 0.5rem;
+  font-family: var(--fuente-titulos);
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ambar);
+}
+.titulo-pagina p:last-child { color: var(--texto-suave); }
+
+/* ---------- Planetas ---------- */
+.planeta {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) 1.2fr;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  scroll-margin-top: 5rem;
+}
+
+.planeta__imagen { display: flex; justify-content: center; }
+.planeta__imagen img {
+  width: 100%;
+  max-width: 380px;
+  animation: flotar 8s ease-in-out infinite;
+}
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Interfaz de datos tipo terminal holográfica */
+.ficha {
+  --color: var(--ambar);
+  position: relative;
+  padding: 1.75rem;
+  background: linear-gradient(160deg, rgba(14, 21, 38, 0.95), rgba(7, 11, 22, 0.9));
+  border: 1px solid var(--borde);
+  border-left: 3px solid var(--color);
+  border-radius: 4px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.ficha--cian { --color: var(--cian); }
+
+/* Líneas de escaneo sutiles */
+.ficha::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.015) 0 1px, transparent 1px 3px);
+}
+/* Esquina recortada decorativa */
+.ficha::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-top: 2px solid var(--color);
+  border-right: 2px solid var(--color);
+  opacity: 0.6;
+}
+
+.ficha__cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed var(--borde);
+}
+.ficha__codigo {
+  font-family: var(--fuente-titulos);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--texto-suave);
+}
+.ficha__cabecera h2 {
+  flex: 1;
+  font-family: var(--fuente-titulos);
+  font-size: 1.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color);
+}
+.ficha__estado { font-size: 0.8rem; color: #7be38f; }
+
+.ficha__descripcion { color: var(--texto-suave); margin-bottom: 1.5rem; }
+
+.ficha__datos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1.5rem;
+}
+.ficha__datos div {
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--borde);
+  border-radius: 3px;
+}
+.ficha__datos dt {
+  font-family: var(--fuente-titulos);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color);
+}
+.ficha__datos dd { font-size: 1rem; }
+
+.ficha__peligro {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  font-family: var(--fuente-titulos);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+.barra {
+  flex: 1;
+  height: 8px;
+  background: var(--borde);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.barra__relleno {
+  height: 100%;
+  background: linear-gradient(90deg, #7be38f, var(--ambar), #e5484d);
+  background-size: 300px 100%;
+}
+
 /* ---------- Pie ---------- */
 .pie {
   padding: 2rem 1.5rem;
@@ -252,4 +391,8 @@ a:hover { color: var(--ambar-claro); }
     box-shadow: none;
   }
   .contenido { padding: 2rem 1rem; }
+  .planeta { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 3.5rem; }
+  .planeta__imagen img { max-width: 240px; }
+  .ficha { padding: 1.25rem; }
+  .ficha__datos { gap: 0.6rem; }
 }

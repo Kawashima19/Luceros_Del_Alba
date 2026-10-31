@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="base" cx="35%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#bdf6ff"/>
+      <stop offset="0.45" stop-color="#2f8fb0"/>
+      <stop offset="1" stop-color="#06233a"/>
+    </radialGradient>
+    <radialGradient id="sombra" cx="75%" cy="70%" r="65%">
+      <stop offset="0.3" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.75"/>
+    </radialGradient>
+    <radialGradient id="atm" cx="50%" cy="50%" r="50%">
+      <stop offset="0.78" stop-color="#5ce1e6" stop-opacity="0.6"/>
+      <stop offset="0.88" stop-color="#5ce1e6" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#5ce1e6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="c"><circle cx="200" cy="200" r="160"/></clipPath>
+  </defs>
+  <circle cx="200" cy="200" r="198" fill="url(#atm)"/>
+  <circle cx="200" cy="200" r="160" fill="url(#base)"/>
+  <g clip-path="url(#c)" fill="#3f7a4a" opacity="0.55">
+    <path d="M90 120 q40 -30 80 0 q30 25 -10 50 q-40 20 -60 -5 q-30 -20 -10 -45z"/>
+    <path d="M230 210 q50 -20 90 10 q20 40 -30 55 q-50 10 -70 -20 q-10 -30 10 -45z"/>
+    <path d="M110 260 q30 -10 45 15 q5 25 -25 30 q-30 0 -20 -45z"/>
+  </g>
+  <g clip-path="url(#c)" fill="none" stroke="#ffffff" stroke-linecap="round" opacity="0.4">
+    <path d="M60 175 Q160 160 250 180" stroke-width="6"/>
+    <path d="M150 300 Q240 285 330 300" stroke-width="5"/>
+  </g>
+  <circle cx="200" cy="200" r="160" fill="url(#sombra)"/>
+</svg>
