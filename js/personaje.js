@@ -26,7 +26,7 @@ function tarjetaDeDatos(item) {
         </div>
       </div>
       <p class="objeto__desc">${escapar(item.descripcion)}</p>
-      <dl class="objeto__datos">
+      <dl class="objeto__datos objeto__datos--texto">
         ${item.rasgos.map(([t, d]) => `<div><dt>${escapar(t)}</dt><dd>${escapar(d)}</dd></div>`).join("")}
       </dl>
     </article>`;

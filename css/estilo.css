@@ -514,6 +514,17 @@ a:hover { color: var(--ambar-claro); }
 }
 .objeto__datos dd { text-align: right; font-size: 0.85rem; }
 
+/* Rasgos con texto largo (razas, trasfondos): título arriba y texto a todo el ancho */
+.objeto__datos--texto div { flex-direction: column; gap: 0.15rem; }
+.objeto__datos--texto dd { text-align: left; line-height: 1.5; }
+
+/* Razas nativas bajo el carrusel: una tarjeta centrada y con ancho cómodo */
+.razas-planeta .rejilla-objetos {
+  grid-template-columns: 1fr;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
 /* Variantes de clase */
 .variantes { margin-top: 1rem; }
 .variantes__titulo {
