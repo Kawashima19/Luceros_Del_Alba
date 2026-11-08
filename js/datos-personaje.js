@@ -72,4 +72,20 @@ const DATOS = {
 
   // Pendiente: las variantes de trasfondo aún no están definidas.
   trasfondos: [],
+
+  facciones: [
+    {
+      id: "cazadores",
+      nombre: "Cazadores",
+      icono: "◎",
+      tipo: "Facción · Itinerante",
+      descripcion:
+        "Cazadores de oficio. Recorren los planetas en busca de seres a los que dar caza.",
+      rasgos: [
+        ["Actividad", "Caza de seres"],
+        ["Ámbito", "Recorren los planetas"],
+        ["Líder", "N/D"],
+      ],
+    },
+  ],
 };

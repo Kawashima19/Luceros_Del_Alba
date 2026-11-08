@@ -162,6 +162,9 @@ if (razasLista) renderLista(razasLista, DATOS.razas, "Aún no hay razas definida
 const trasfondosLista = document.getElementById("trasfondos-lista");
 if (trasfondosLista) renderLista(trasfondosLista, DATOS.trasfondos, "Por definir: los trasfondos aún no están escritos.");
 
+const facciones = document.getElementById("facciones-lista");
+if (facciones) renderLista(facciones, DATOS.facciones, "Aún no hay facciones definidas.");
+
 const creador = document.getElementById("creador");
 if (creador) iniciarCreador(creador);
 
