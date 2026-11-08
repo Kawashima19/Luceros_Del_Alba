@@ -608,6 +608,7 @@ a:hover { color: var(--ambar-claro); }
    ========================================================= */
 
 .razas-planeta {
+  width: 100%;
   max-width: var(--ancho-max);
   margin: 2.5rem auto 0;
 }
