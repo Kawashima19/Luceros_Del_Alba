@@ -601,8 +601,8 @@ a:hover { color: var(--ambar-claro); }
   margin: 2.5rem auto 0;
 }
 
-.razas-planeta__bloque { display: none; }
-.razas-planeta__bloque.activo { display: block; }
+/* El atributo hidden lo gestiona carrusel.js; esta regla refuerza que se oculte */
+.razas-planeta__bloque[hidden] { display: none !important; }
 
 .razas-planeta__titulo {
   margin-bottom: 1rem;

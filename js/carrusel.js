@@ -27,9 +27,9 @@ document.querySelectorAll(".carrusel").forEach((carrusel) => {
     });
     puntos.forEach((p, j) => p.classList.toggle("activo", j === actual));
     // Muestra el bloque que tiene data-para igual al planeta activo (p. ej. sus razas nativas)
-    document.querySelectorAll("[data-para]").forEach((b) =>
-      b.classList.toggle("activo", b.dataset.para === diapositivas[actual].id)
-    );
+    document.querySelectorAll("[data-para]").forEach((b) => {
+      b.hidden = b.dataset.para !== diapositivas[actual].id;
+    });
     if (cambiarUrl) try { history.replaceState(null, "", "#" + diapositivas[actual].id); } catch (e) {} // permite enlazar a un planeta concreto
   }
 
