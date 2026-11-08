@@ -14,10 +14,18 @@ function escapar(texto) {
   return d.innerHTML;
 }
 
-// Tarjeta común para razas y trasfondos.
+// Ruta base del sitio (para que las imágenes de datos funcionen desde cualquier página)
+const RAIZ = document.currentScript ? document.currentScript.src.replace(/js\/personaje\.js.*$/, "") : "";
+
+// Tarjeta común para razas, trasfondos y facciones.
+// Si el dato tiene "imagen" (ruta desde la raíz, p. ej. "img/facciones/cazadores.svg"), se muestra arriba.
 function tarjetaDeDatos(item) {
+  const imagen = item.imagen
+    ? `<img class="objeto__imagen" src="${escapar(RAIZ + item.imagen)}" alt="${escapar(item.nombre)}">`
+    : "";
   return `
     <article class="objeto">
+      ${imagen}
       <div class="objeto__cabecera">
         <span class="objeto__icono">${escapar(item.icono)}</span>
         <div>

@@ -9,6 +9,11 @@
   Las razas tienen siempre estos seis rasgos, en este orden:
   Tamaño, Velocidad (solo en pies), Bonificadores, Visión en la oscuridad,
   Resistencias y Habilidades. Si una raza no tiene alguno, se escribe 0 o N/D.
+
+  Cualquier ficha (raza, trasfondo o facción) puede llevar "imagen": la ruta
+  de la ilustración desde la raíz del sitio (p. ej. "img/facciones/cazadores.svg").
+  Si es null, la tarjeta no muestra imagen. Las facciones pueden añadir filas
+  propias, como "Vestimenta".
 */
 
 const DATOS = {
@@ -78,12 +83,14 @@ const DATOS = {
       id: "cazadores",
       nombre: "Cazadores",
       icono: "◎",
+      imagen: null, // p. ej. "img/facciones/cazadores.svg" cuando haya ilustración
       tipo: "Facción · Itinerante",
       descripcion:
         "Cazadores de oficio. Recorren los planetas en busca de seres a los que dar caza.",
       rasgos: [
         ["Actividad", "Caza de seres"],
         ["Ámbito", "Recorren los planetas"],
+        ["Vestimenta", "N/D"],
         ["Líder", "N/D"],
       ],
     },

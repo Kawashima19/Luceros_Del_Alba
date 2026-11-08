@@ -504,6 +504,17 @@ a:hover { color: var(--ambar-claro); }
   padding: 0.3rem 0;
   border-bottom: 1px dashed var(--borde);
 }
+/* Imagen opcional de la tarjeta (campo "imagen" en datos-personaje.js) */
+.objeto__imagen {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin-bottom: 0.85rem;
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+}
+
 .objeto__datos dt {
   flex-shrink: 0;
   font-family: var(--fuente-titulos);
