@@ -8,6 +8,8 @@ Wiki de una campaña de D&D 5e de ciencia ficción espacial: ambientación, plan
 index.html        Portada
 css/estilo.css    Estilo común de todas las páginas
 js/menu.js        Cabecera (con desplegables) y pie compartidos
+js/datos-personaje.js  Datos de razas, clases y trasfondos (editar aquí)
+js/personaje.js   Pinta razas, trasfondos y el creador de personaje
 mundo/            Planetas, facciones, historia
 personaje/        Creación, razas, clases, trasfondos
 reglas/           Básicas, coberturas, naves

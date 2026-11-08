@@ -101,11 +101,20 @@
       <button class="flecha flecha--der" aria-label="Planeta siguiente">›</button>
       <div class="carrusel__puntos"></div>
     </section>
+
+    <!-- Razas nativas: un bloque por planeta, enlazado con data-para.
+         js/personaje.js rellena cada bloque con las razas cuyo "origen" coincide. -->
+    <section class="razas-planeta" aria-label="Razas nativas del planeta">
+      <div class="razas-planeta__bloque" data-para="planeta-1" data-razas-origen="planeta-1"></div>
+      <div class="razas-planeta__bloque" data-para="planeta-2" data-razas-origen="planeta-2"></div>
+    </section>
   </main>
 
   <div id="pie"></div>
 
   <script src="../js/menu.js"></script>
   <script src="../js/carrusel.js"></script>
+  <script src="../js/datos-personaje.js"></script>
+  <script src="../js/personaje.js"></script>
 </body>
 </html>

@@ -587,4 +587,141 @@ a:hover { color: var(--ambar-claro); }
   .carrusel { padding: 0; }
   /* En móvil las flechas quedan a los lados de la imagen del planeta */
   .flecha { top: 75px; width: 2.6rem; height: 2.6rem; font-size: 1.6rem; }
+  .creador__form { grid-template-columns: 1fr; }
+  .hoja dl div { grid-template-columns: 1fr; gap: 0.1rem; }
+}
+
+/* =========================================================
+   Razas nativas bajo el carrusel de planetas
+   Solo se ve el bloque del planeta activo (ver carrusel.js)
+   ========================================================= */
+
+.razas-planeta {
+  max-width: var(--ancho-max);
+  margin: 2.5rem auto 0;
+}
+
+.razas-planeta__bloque { display: none; }
+.razas-planeta__bloque.activo { display: block; }
+
+.razas-planeta__titulo {
+  margin-bottom: 1rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cian);
+  text-align: center;
+}
+
+/* =========================================================
+   Creador de personaje
+   ========================================================= */
+
+.creador {
+  max-width: 760px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.creador__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.creador__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-family: var(--fuente-titulos);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+
+.creador input,
+.creador select {
+  padding: 0.6rem 0.75rem;
+  background: var(--fondo-panel);
+  color: var(--texto);
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+  font: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.creador input:focus,
+.creador select:focus {
+  outline: none;
+  border-color: var(--cian);
+  box-shadow: 0 0 0 2px rgba(92, 225, 230, 0.2);
+}
+
+.hoja {
+  padding: 1.5rem;
+  background: linear-gradient(160deg, rgba(14, 21, 38, 0.95), rgba(7, 11, 22, 0.9));
+  border: 1px solid var(--borde);
+  border-top: 2px solid var(--cian);
+}
+
+.hoja h2 {
+  margin-bottom: 0.75rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.6rem;
+  color: var(--ambar-claro);
+}
+
+.hoja h3 {
+  margin: 1.2rem 0 0.4rem;
+  font-family: var(--fuente-titulos);
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cian);
+}
+
+.hoja dl div {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0.75rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed var(--borde);
+}
+
+.hoja dt { color: var(--texto-suave); }
+
+.creador__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button.boton {
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+button.boton--primario {
+  background: var(--ambar);
+}
+
+.hoja__nota {
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--texto-suave);
+}
+
+@media print {
+  body { background: #fff; color: #000; }
+  .cabecera, .pie, .titulo-pagina, .intro-equipo,
+  .creador__form, .creador__acciones, .hoja__nota { display: none !important; }
+  .hoja { background: none; border: 1px solid #000; }
+  .hoja h2, .hoja h3, .hoja dt, .hoja dd, .hoja p { color: #000; }
 }
